@@ -331,42 +331,7 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [
-    {
-      "validityFilter": {
-        "column": "price_amount",
-        "type": "validity",
-        "params": {
-          "nok": true,
-          "type": "DoubleMeaning",
-          "ok": true,
-          "empty": true
-        }
-      },
-      "column": "price_amount",
-      "active": true,
-      "alphanumFilter": {
-        "values": [],
-        "column": "price_amount",
-        "type": "alphanum",
-        "params": {
-          "mode": "full_string",
-          "normalization": "exact"
-        }
-      },
-      "type": "columnFilter",
-      "$$hashKey": "object:17342",
-      "facet": {
-        "columnType": "NUMERICAL",
-        "selectedValues": {},
-        "column": "price_amount",
-        "sort": "count",
-        "type": "facet",
-        "currentMode": "NUMERICAL"
-      },
-      "currentMode": "FACET"
-    }
-  ],
+  "explorationFilters": [],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -449,20 +414,6 @@
           "price_amount"
         ],
         "outFormat": "RAW",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "RemoveRowsOnEmpty",
-      "params": {
-        "columns": [
-          "last_review"
-        ],
-        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
