@@ -28,7 +28,7 @@
     "separator": ",",
     "quoteChar": "\"",
     "escapeChar": "\\",
-    "dateSerializationFormat": "ISO",
+    "dateSerializationFormat": "HIVE",
     "arrayMapFormat": "json",
     "hiveSeparators": [
       "\u0002",
@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634645903090
+    "lastModifiedOn": 1634646348607
   },
   "creationTag": {
     "versionNumber": 0,
