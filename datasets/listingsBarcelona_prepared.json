@@ -1,0 +1,479 @@
+{
+  "type": "Filesystem",
+  "managed": true,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "unix",
+    "charset": "utf8",
+    "separator": "\t",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": false,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 0,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": "gz"
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1634646484901
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1634646484901
+  },
+  "tags": [],
+  "params": {
+    "connection": "filesystem_managed",
+    "path": "${projectKey}/listingsBarcelona_prepared",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "listing_url",
+        "type": "string"
+      },
+      {
+        "name": "scrape_id",
+        "type": "bigint"
+      },
+      {
+        "name": "last_scraped",
+        "type": "string",
+        "meaning": "DateSource"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "name": "neighborhood_overview",
+        "type": "string"
+      },
+      {
+        "name": "picture_url",
+        "type": "string"
+      },
+      {
+        "name": "host_id",
+        "type": "bigint"
+      },
+      {
+        "name": "host_url",
+        "type": "string"
+      },
+      {
+        "name": "host_name",
+        "type": "string"
+      },
+      {
+        "name": "host_since",
+        "type": "string"
+      },
+      {
+        "name": "host_location",
+        "type": "string"
+      },
+      {
+        "name": "host_about",
+        "type": "string"
+      },
+      {
+        "name": "host_response_time",
+        "type": "string"
+      },
+      {
+        "name": "host_response_rate",
+        "type": "string"
+      },
+      {
+        "name": "host_acceptance_rate",
+        "type": "string"
+      },
+      {
+        "name": "host_is_superhost",
+        "type": "boolean",
+        "meaning": "Boolean"
+      },
+      {
+        "name": "host_thumbnail_url",
+        "type": "string"
+      },
+      {
+        "name": "host_picture_url",
+        "type": "string"
+      },
+      {
+        "name": "host_neighbourhood",
+        "type": "string"
+      },
+      {
+        "name": "host_listings_count",
+        "type": "bigint"
+      },
+      {
+        "name": "host_total_listings_count",
+        "type": "bigint"
+      },
+      {
+        "name": "host_verifications",
+        "type": "string"
+      },
+      {
+        "name": "host_has_profile_pic",
+        "type": "boolean"
+      },
+      {
+        "name": "host_identity_verified",
+        "type": "boolean",
+        "meaning": "Boolean"
+      },
+      {
+        "name": "neighbourhood",
+        "type": "string"
+      },
+      {
+        "name": "neighbourhood_cleansed",
+        "type": "string"
+      },
+      {
+        "name": "neighbourhood_group_cleansed",
+        "type": "string"
+      },
+      {
+        "name": "latitude",
+        "type": "double",
+        "meaning": "Latitude"
+      },
+      {
+        "name": "longitude",
+        "type": "double",
+        "meaning": "Longitude"
+      },
+      {
+        "name": "property_type",
+        "type": "string"
+      },
+      {
+        "name": "room_type",
+        "type": "string"
+      },
+      {
+        "name": "accommodates",
+        "type": "bigint"
+      },
+      {
+        "name": "bathrooms",
+        "type": "string"
+      },
+      {
+        "name": "bathrooms_text",
+        "type": "string"
+      },
+      {
+        "name": "bedrooms",
+        "type": "bigint"
+      },
+      {
+        "name": "beds",
+        "type": "bigint"
+      },
+      {
+        "name": "amenities",
+        "type": "array",
+        "arrayContent": {
+          "type": "string"
+        }
+      },
+      {
+        "name": "price",
+        "type": "string"
+      },
+      {
+        "name": "minimum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "maximum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "minimum_minimum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "maximum_minimum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "minimum_maximum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "maximum_maximum_nights",
+        "type": "bigint"
+      },
+      {
+        "name": "minimum_nights_avg_ntm",
+        "type": "double"
+      },
+      {
+        "name": "maximum_nights_avg_ntm",
+        "type": "double"
+      },
+      {
+        "name": "calendar_updated",
+        "type": "string"
+      },
+      {
+        "name": "has_availability",
+        "type": "boolean"
+      },
+      {
+        "name": "availability_30",
+        "type": "bigint"
+      },
+      {
+        "name": "availability_60",
+        "type": "bigint"
+      },
+      {
+        "name": "availability_90",
+        "type": "bigint"
+      },
+      {
+        "name": "availability_365",
+        "type": "bigint"
+      },
+      {
+        "name": "calendar_last_scraped",
+        "type": "string"
+      },
+      {
+        "name": "number_of_reviews",
+        "type": "bigint"
+      },
+      {
+        "name": "number_of_reviews_ltm",
+        "type": "bigint"
+      },
+      {
+        "name": "number_of_reviews_l30d",
+        "type": "bigint"
+      },
+      {
+        "name": "first_review",
+        "type": "string"
+      },
+      {
+        "name": "last_review",
+        "type": "string"
+      },
+      {
+        "name": "review_scores_rating",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_accuracy",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_cleanliness",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_checkin",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_communication",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_location",
+        "type": "double"
+      },
+      {
+        "name": "review_scores_value",
+        "type": "double"
+      },
+      {
+        "name": "license",
+        "type": "string"
+      },
+      {
+        "name": "instant_bookable",
+        "type": "boolean",
+        "meaning": "Boolean"
+      },
+      {
+        "name": "calculated_host_listings_count",
+        "type": "bigint"
+      },
+      {
+        "name": "calculated_host_listings_count_entire_homes",
+        "type": "bigint"
+      },
+      {
+        "name": "calculated_host_listings_count_private_rooms",
+        "type": "bigint"
+      },
+      {
+        "name": "calculated_host_listings_count_shared_rooms",
+        "type": "bigint"
+      },
+      {
+        "name": "reviews_per_month",
+        "type": "double"
+      }
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
