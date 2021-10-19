@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634651454979
+    "lastModifiedOn": 1634674887039
   },
   "creationTag": {
     "versionNumber": 0,
@@ -100,7 +100,7 @@
       },
       {
         "name": "last_scraped",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "name",
@@ -132,7 +132,7 @@
       },
       {
         "name": "host_since",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "host_location",
@@ -148,12 +148,12 @@
       },
       {
         "name": "host_response_rate",
-        "type": "string",
+        "type": "double",
         "meaning": "Text"
       },
       {
         "name": "host_acceptance_rate",
-        "type": "string"
+        "type": "double"
       },
       {
         "name": "host_is_superhost",
@@ -321,7 +321,7 @@
       },
       {
         "name": "calendar_last_scraped",
-        "type": "string"
+        "type": "date"
       },
       {
         "name": "number_of_reviews",
