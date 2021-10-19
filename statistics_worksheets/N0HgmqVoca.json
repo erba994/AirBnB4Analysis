@@ -39,18 +39,6 @@
         "showBoxPlot": false,
         "xColumns": [
           {
-            "name": "id",
-            "type": "CATEGORICAL"
-          },
-          {
-            "name": "listing_url",
-            "type": "CATEGORICAL"
-          },
-          {
-            "name": "scrape_id",
-            "type": "CATEGORICAL"
-          },
-          {
             "name": "last_scraped",
             "type": "CATEGORICAL"
           },
@@ -339,192 +327,6 @@
           {
             "type": "column_card",
             "column": {
-              "name": "id",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
-                "column": {
-                  "name": "id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "VdORUKE"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "IxQ5L2l"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "e2YYG51"
-              }
-            ],
-            "id": "IgFd3ZQ"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "listing_url",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
-                "column": {
-                  "name": "listing_url",
-                  "type": "CATEGORICAL"
-                },
-                "id": "XTarQff"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "listing_url",
-                  "type": "CATEGORICAL"
-                },
-                "id": "XviBwPH"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "listing_url",
-                  "type": "CATEGORICAL"
-                },
-                "id": "azwR0gG"
-              }
-            ],
-            "id": "bjHQdxt"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "scrape_id",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
-                "column": {
-                  "name": "scrape_id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "ytaTVhS"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "scrape_id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "1aYfWzG"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "scrape_id",
-                  "type": "CATEGORICAL"
-                },
-                "id": "Dasznsz"
-              }
-            ],
-            "id": "JBrgZ7y"
-          },
-          {
-            "type": "column_card",
-            "column": {
               "name": "last_scraped",
               "type": "CATEGORICAL"
             },
@@ -537,7 +339,7 @@
                   "name": "last_scraped",
                   "type": "CATEGORICAL"
                 },
-                "id": "L1u3zfh"
+                "id": "ZJLGyTm"
               },
               {
                 "type": "univariate_summary",
@@ -579,7 +381,7 @@
                   "name": "last_scraped",
                   "type": "CATEGORICAL"
                 },
-                "id": "kjops1W"
+                "id": "1HLcOIX"
               }
             ],
             "id": "T7AnM6c"
@@ -4932,11 +4734,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634646071741
+    "lastModifiedOn": 1634646192280
   },
   "creationTag": {
     "versionNumber": 0,
