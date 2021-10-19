@@ -11,6 +11,9 @@
           "map": {
             "listingsBarcelona": {
               "repartition": 10
+            },
+            "ReviewsBarcelona": {
+              "repartition": 10
             }
           }
         },
@@ -54,7 +57,7 @@
     "main": {
       "items": [
         {
-          "ref": "ReviewsBarcelona",
+          "ref": "listingsBarcelona",
           "deps": []
         }
       ]
@@ -72,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634647888151
+    "lastModifiedOn": 1634647891693
   },
   "creationTag": {
     "versionNumber": 0,
