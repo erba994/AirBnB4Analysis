@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634645750287
+    "lastModifiedOn": 1634645755470
   },
   "creationTag": {
     "versionNumber": 0,
@@ -189,7 +189,8 @@
       },
       {
         "name": "host_identity_verified",
-        "type": "string"
+        "type": "string",
+        "meaning": "Boolean"
       },
       {
         "name": "neighbourhood",
