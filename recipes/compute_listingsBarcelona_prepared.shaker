@@ -330,13 +330,13 @@
   },
   "steps": [
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateParser",
       "params": {
         "formats": [
-          ""
+          "yyyy-MM-dd"
         ],
         "columns": [
           "last_scraped",
