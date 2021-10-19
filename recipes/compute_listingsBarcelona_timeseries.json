@@ -23,7 +23,11 @@
       "seasonal_stl": 7,
       "robust_stl": false,
       "additional_parameters_STL": {},
-      "target_columns": [],
+      "target_columns": [
+        "review_scores_value",
+        "review_scores_rating",
+        "price_amount"
+      ],
       "timeseries_identifiers": [],
       "time_column": "last_review"
     },
@@ -60,11 +64,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634650902104
+    "lastModifiedOn": 1634650956153
   },
   "creationTag": {
     "versionNumber": 0,
