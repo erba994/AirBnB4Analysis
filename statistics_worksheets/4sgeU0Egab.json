@@ -68,7 +68,7 @@
           },
           {
             "name": "host_since",
-            "type": "CONTINUOUS"
+            "type": "CATEGORICAL"
           },
           {
             "name": "host_location",
@@ -758,21 +758,18 @@
             "type": "column_card",
             "column": {
               "name": "host_since",
-              "type": "CONTINUOUS"
+              "type": "CATEGORICAL"
             },
             "cards": [
               {
-                "type": "numerical_histogram",
-                "showBoxPlot": true,
-                "showHistogram": true,
-                "binningMode": "AUTO",
-                "nbBins": 25,
-                "customBinningBoundaries": [],
+                "type": "categorical_histogram",
+                "maxValues": 10,
+                "groupOthers": false,
                 "column": {
                   "name": "host_since",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
-                "id": "xG1sXCb"
+                "id": "VFMOJyC"
               },
               {
                 "type": "univariate_summary",
@@ -803,19 +800,18 @@
                 },
                 "column": {
                   "name": "host_since",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
                 "id": "5uVNIGy"
               },
               {
-                "type": "quantile_table",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
+                "type": "univariate_frequency_table",
+                "maxValues": 10,
                 "column": {
                   "name": "host_since",
-                  "type": "CONTINUOUS"
+                  "type": "CATEGORICAL"
                 },
-                "id": "ndKywMd"
+                "id": "4VVVX49"
               }
             ],
             "id": "AZS8Vsx"
@@ -1021,7 +1017,7 @@
                   "name": "host_response_rate",
                   "type": "CATEGORICAL"
                 },
-                "id": "AcEYGPM"
+                "id": "rRF3zUN"
               },
               {
                 "type": "univariate_summary",
@@ -1063,7 +1059,7 @@
                   "name": "host_response_rate",
                   "type": "CATEGORICAL"
                 },
-                "id": "uTnIy6n"
+                "id": "369zO27"
               }
             ],
             "id": "INkKMt3"
@@ -1083,7 +1079,7 @@
                   "name": "host_acceptance_rate",
                   "type": "CATEGORICAL"
                 },
-                "id": "nmoSzSj"
+                "id": "4Bt5sgc"
               },
               {
                 "type": "univariate_summary",
@@ -1125,7 +1121,7 @@
                   "name": "host_acceptance_rate",
                   "type": "CATEGORICAL"
                 },
-                "id": "hQaH1mK"
+                "id": "3P5jj9K"
               }
             ],
             "id": "uE8B9aE"
@@ -4808,11 +4804,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634647389935
+    "lastModifiedOn": 1634648125835
   },
   "creationTag": {
     "versionNumber": 0,
