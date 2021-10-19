@@ -24,8 +24,7 @@
       "robust_stl": false,
       "additional_parameters_STL": {},
       "target_columns": [
-        "review_scores_value",
-        "review_scores_rating"
+        "review_scores_value"
       ],
       "timeseries_identifiers": [],
       "time_column": "last_review"
@@ -63,11 +62,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634651660062
+    "lastModifiedOn": 1634651685571
   },
   "creationTag": {
     "versionNumber": 0,
