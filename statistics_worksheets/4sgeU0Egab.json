@@ -159,10 +159,6 @@
             "type": "CONTINUOUS"
           },
           {
-            "name": "bathrooms",
-            "type": "CATEGORICAL"
-          },
-          {
             "name": "bathrooms_text",
             "type": "CATEGORICAL"
           },
@@ -2199,68 +2195,6 @@
               }
             ],
             "id": "LLxYgeg"
-          },
-          {
-            "type": "column_card",
-            "column": {
-              "name": "bathrooms",
-              "type": "CATEGORICAL"
-            },
-            "cards": [
-              {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
-                "column": {
-                  "name": "bathrooms",
-                  "type": "CATEGORICAL"
-                },
-                "id": "GQdqzhg"
-              },
-              {
-                "type": "univariate_summary",
-                "confidenceLevel": 0.95,
-                "showConfidenceInterval": false,
-                "compute": {
-                  "totalCount": true,
-                  "mean": true,
-                  "sum": false,
-                  "median": true,
-                  "std": true,
-                  "variance": false,
-                  "skewness": false,
-                  "kurtosis": false,
-                  "sem": false,
-                  "completeCount": true,
-                  "nbEmpty": true,
-                  "zeroCount": false,
-                  "zeroRatio": false,
-                  "nonZeroRatio": false,
-                  "iqr": false,
-                  "distinctCount": true,
-                  "nbNonEmpty": false,
-                  "min": true,
-                  "max": true,
-                  "range": false,
-                  "mode": true
-                },
-                "column": {
-                  "name": "bathrooms",
-                  "type": "CATEGORICAL"
-                },
-                "id": "Ti850zA"
-              },
-              {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
-                "column": {
-                  "name": "bathrooms",
-                  "type": "CATEGORICAL"
-                },
-                "id": "muPXglB"
-              }
-            ],
-            "id": "IFFJYAJ"
           },
           {
             "type": "column_card",
@@ -4808,11 +4742,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634649084194
+    "lastModifiedOn": 1634650460003
   },
   "creationTag": {
     "versionNumber": 0,
