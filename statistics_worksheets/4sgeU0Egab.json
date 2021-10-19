@@ -180,7 +180,7 @@
           },
           {
             "name": "price",
-            "type": "CATEGORICAL"
+            "type": "CONTINUOUS"
           },
           {
             "name": "minimum_nights",
@@ -2522,18 +2522,21 @@
             "type": "column_card",
             "column": {
               "name": "price",
-              "type": "CATEGORICAL"
+              "type": "CONTINUOUS"
             },
             "cards": [
               {
-                "type": "categorical_histogram",
-                "maxValues": 10,
-                "groupOthers": false,
+                "type": "numerical_histogram",
+                "showBoxPlot": true,
+                "showHistogram": true,
+                "binningMode": "AUTO",
+                "nbBins": 25,
+                "customBinningBoundaries": [],
                 "column": {
                   "name": "price",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 },
-                "id": "mRWZoUf"
+                "id": "UYvbNay"
               },
               {
                 "type": "univariate_summary",
@@ -2564,18 +2567,19 @@
                 },
                 "column": {
                   "name": "price",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 },
                 "id": "oWCqx0W"
               },
               {
-                "type": "univariate_frequency_table",
-                "maxValues": 10,
+                "type": "quantile_table",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
                 "column": {
                   "name": "price",
-                  "type": "CATEGORICAL"
+                  "type": "CONTINUOUS"
                 },
-                "id": "ucBhCM6"
+                "id": "qkMp2A6"
               }
             ],
             "id": "hNQE5FK"
@@ -4804,11 +4808,11 @@
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634648125835
+    "lastModifiedOn": 1634649084194
   },
   "creationTag": {
     "versionNumber": 0,
