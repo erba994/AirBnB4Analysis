@@ -438,7 +438,7 @@
       "alwaysShowComment": false
     },
     {
-      "preview": true,
+      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "NumericalFormatConverter",
@@ -449,6 +449,20 @@
           "price_amount"
         ],
         "outFormat": "RAW",
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "RemoveRowsOnEmpty",
+      "params": {
+        "columns": [
+          "last_review"
+        ],
+        "keep": false,
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
@@ -505,8 +519,10 @@
     "price_amount": 105,
     "host_about": 300,
     "bathrooms": 100,
+    "last_review_day": 128,
     "bedrooms": 100,
     "license": 190,
+    "last_review_year": 135,
     "minimum_nights_avg_ntm": 180,
     "name": 300,
     "availability_60": 128,
@@ -547,6 +563,7 @@
     "bathrooms_text": 148,
     "number_of_reviews_l30d": 180,
     "host_id": 100,
+    "last_review_month": 143,
     "host_listings_count": 158,
     "price_currency_code": 158,
     "host_total_listings_count": 203,
