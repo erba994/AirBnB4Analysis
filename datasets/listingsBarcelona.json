@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634645755470
+    "lastModifiedOn": 1634645762205
   },
   "creationTag": {
     "versionNumber": 0,
@@ -362,7 +362,8 @@
       },
       {
         "name": "instant_bookable",
-        "type": "string"
+        "type": "string",
+        "meaning": "Boolean"
       },
       {
         "name": "calculated_host_listings_count",
