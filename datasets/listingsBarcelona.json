@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634641497629
+    "lastModifiedOn": 1634645750287
   },
   "creationTag": {
     "versionNumber": 0,
@@ -156,7 +156,8 @@
       },
       {
         "name": "host_is_superhost",
-        "type": "string"
+        "type": "string",
+        "meaning": "Boolean"
       },
       {
         "name": "host_thumbnail_url",
