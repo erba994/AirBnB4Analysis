@@ -57,7 +57,7 @@
     "main": {
       "items": [
         {
-          "ref": "listingsBarcelona",
+          "ref": "BarcelonaListings",
           "deps": []
         }
       ]
@@ -75,11 +75,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634651531744
+    "lastModifiedOn": 1634674699694
   },
   "creationTag": {
     "versionNumber": 0,
