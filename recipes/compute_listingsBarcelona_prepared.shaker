@@ -164,6 +164,14 @@
       },
       {
         "d": true,
+        "name": "price_currency_code"
+      },
+      {
+        "d": true,
+        "name": "price_amount"
+      },
+      {
+        "d": true,
         "name": "minimum_nights"
       },
       {
@@ -323,7 +331,42 @@
     },
     "autoRefreshSample": false
   },
-  "explorationFilters": [],
+  "explorationFilters": [
+    {
+      "validityFilter": {
+        "column": "price_amount",
+        "type": "validity",
+        "params": {
+          "nok": true,
+          "type": "DoubleMeaning",
+          "ok": true,
+          "empty": true
+        }
+      },
+      "column": "price_amount",
+      "active": true,
+      "alphanumFilter": {
+        "values": [],
+        "column": "price_amount",
+        "type": "alphanum",
+        "params": {
+          "mode": "full_string",
+          "normalization": "exact"
+        }
+      },
+      "type": "columnFilter",
+      "$$hashKey": "object:17342",
+      "facet": {
+        "columnType": "NUMERICAL",
+        "selectedValues": {},
+        "column": "price_amount",
+        "sort": "count",
+        "type": "facet",
+        "currentMode": "NUMERICAL"
+      },
+      "currentMode": "FACET"
+    }
+  ],
   "origin": "PREPARE_RECIPE",
   "exploreUIParams": {
     "autoRefresh": true
@@ -348,6 +391,65 @@
         "timezone_id": "UTC",
         "appliesTo": "COLUMNS",
         "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ExtractNumbers",
+      "params": {
+        "output": "",
+        "multipleValues": false,
+        "input": "host_response_rate",
+        "replaceMultipliers": false,
+        "delimiter": "BEST_GUESS",
+        "extractToJson": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ExtractNumbers",
+      "params": {
+        "output": "",
+        "multipleValues": false,
+        "input": "host_acceptance_rate",
+        "replaceMultipliers": false,
+        "delimiter": "BEST_GUESS",
+        "extractToJson": false
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "CurrencySplitter",
+      "params": {
+        "inCol": "price",
+        "outColAmount": "price_amount",
+        "outColCurrencyCode": "price_currency_code",
+        "pristineAmount": true
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "NumericalFormatConverter",
+      "params": {
+        "inFormat": "EN",
+        "outCol": "",
+        "columns": [
+          "price_amount"
+        ],
+        "outFormat": "RAW",
+        "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
     }
@@ -386,7 +488,9 @@
     "neighborhood_overview": 300,
     "number_of_reviews": 143,
     "review_scores_cleanliness": 203,
+    "host_acceptance_rate_0": 180,
     "review_scores_checkin": 173,
+    "static_value": 105,
     "host_location": 300,
     "neighbourhood": 232,
     "price": 100,
@@ -398,6 +502,7 @@
     "review_scores_accuracy": 180,
     "host_response_time": 176,
     "review_scores_value": 158,
+    "price_amount": 105,
     "host_about": 300,
     "bathrooms": 100,
     "bedrooms": 100,
@@ -409,6 +514,7 @@
     "host_neighbourhood": 176,
     "minimum_maximum_nights": 180,
     "beds": 100,
+    "host_acceptance_rate0": 173,
     "scrape_id": 113,
     "instant_bookable": 135,
     "calculated_host_listings_count_entire_homes": 300,
@@ -429,6 +535,7 @@
     "calculated_host_listings_count_shared_rooms": 300,
     "calculated_host_listings_count_private_rooms": 300,
     "availability_365": 135,
+    "host_response_rate_0": 165,
     "calendar_updated": 135,
     "availability_30": 128,
     "listing_url": 274,
@@ -441,10 +548,12 @@
     "number_of_reviews_l30d": 180,
     "host_id": 100,
     "host_listings_count": 158,
+    "price_currency_code": 158,
     "host_total_listings_count": 203,
     "host_acceptance_rate": 165,
     "review_scores_rating": 165,
     "minimum_nights": 120,
+    "rowLength": 100,
     "last_review": 127,
     "calculated_host_listings_count": 240,
     "accommodates": 105,
