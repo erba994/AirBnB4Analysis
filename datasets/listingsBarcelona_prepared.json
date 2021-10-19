@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634648016818
+    "lastModifiedOn": 1634650246084
   },
   "creationTag": {
     "versionNumber": 0,
@@ -148,7 +148,8 @@
       },
       {
         "name": "host_response_rate",
-        "type": "string"
+        "type": "string",
+        "meaning": "Text"
       },
       {
         "name": "host_acceptance_rate",
@@ -251,7 +252,16 @@
       },
       {
         "name": "price",
+        "type": "string",
+        "meaning": "CurrencyAmountMeaning"
+      },
+      {
+        "name": "price_currency_code",
         "type": "string"
+      },
+      {
+        "name": "price_amount",
+        "type": "double"
       },
       {
         "name": "minimum_nights",
