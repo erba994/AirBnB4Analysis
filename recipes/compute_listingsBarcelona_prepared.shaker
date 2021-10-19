@@ -417,20 +417,6 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
-    },
-    {
-      "preview": true,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "RemoveRowsOnEmpty",
-      "params": {
-        "columns": [
-          "last_review"
-        ],
-        "keep": false,
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,

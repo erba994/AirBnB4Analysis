@@ -14,6 +14,9 @@
             },
             "ReviewsBarcelona": {
               "repartition": 10
+            },
+            "BarcelonaListings": {
+              "repartition": 10
             }
           }
         },
@@ -75,11 +78,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634674699694
+    "lastModifiedOn": 1634674887125
   },
   "creationTag": {
     "versionNumber": 0,
