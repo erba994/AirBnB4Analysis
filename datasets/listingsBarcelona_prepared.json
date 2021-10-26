@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634674887039
+    "lastModifiedOn": 1635278891100
   },
   "creationTag": {
     "versionNumber": 0,
@@ -399,6 +399,10 @@
       {
         "name": "reviews_per_month",
         "type": "double"
+      },
+      {
+        "name": "geopoint",
+        "type": "string"
       }
     ],
     "userModified": true
