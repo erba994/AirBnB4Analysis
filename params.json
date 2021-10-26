@@ -140,6 +140,7 @@
   },
   "name": "Airbnb",
   "projectStatus": "Sandbox",
+  "imgPattern": 5,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -195,11 +196,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634642166413
+    "lastModifiedOn": 1635280948776
   },
   "creationTag": {
     "versionNumber": 0,
@@ -212,41 +213,6 @@
   "tags": [],
   "customFields": {},
   "checklists": {
-    "checklists": [
-      {
-        "title": "Your new project\u0027s Todo",
-        "createdOn": 0,
-        "items": [
-          {
-            "done": true,
-            "text": "Create the project",
-            "createdOn": 1634588608891,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Set a project image (click on the color next to the project title)",
-            "createdOn": 1634588608891,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Import your [first dataset](projects/AIRBNB/datasets/new/)",
-            "createdOn": 1634588608891,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          },
-          {
-            "done": false,
-            "text": "Organize your work by replacing this with a real todo",
-            "createdOn": 1634588608891,
-            "createdBy": "admin",
-            "stateChangedOn": 0
-          }
-        ]
-      }
-    ]
+    "checklists": []
   }
 }
