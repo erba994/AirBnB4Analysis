@@ -343,96 +343,107 @@
   "steps": [
     {
       "preview": false,
-      "metaType": "PROCESSOR",
+      "mainColor": "#30c2ff",
+      "name": "Basic steps",
+      "metaType": "GROUP",
       "disabled": false,
-      "type": "DateParser",
-      "params": {
-        "formats": [
-          "yyyy-MM-dd"
-        ],
-        "columns": [
-          "last_scraped",
-          "last_review",
-          "calendar_last_scraped",
-          "host_since",
-          "first_review"
-        ],
-        "timezone_id": "UTC",
-        "appliesTo": "COLUMNS",
-        "lang": "auto"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ExtractNumbers",
-      "params": {
-        "output": "",
-        "multipleValues": false,
-        "input": "host_response_rate",
-        "replaceMultipliers": false,
-        "delimiter": "BEST_GUESS",
-        "extractToJson": false
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ExtractNumbers",
-      "params": {
-        "output": "",
-        "multipleValues": false,
-        "input": "host_acceptance_rate",
-        "replaceMultipliers": false,
-        "delimiter": "BEST_GUESS",
-        "extractToJson": false
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "CurrencySplitter",
-      "params": {
-        "inCol": "price",
-        "outColAmount": "price_amount",
-        "outColCurrencyCode": "price_currency_code",
-        "pristineAmount": true
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "NumericalFormatConverter",
-      "params": {
-        "inFormat": "EN",
-        "outCol": "",
-        "columns": [
-          "price_amount"
-        ],
-        "outFormat": "RAW",
-        "appliesTo": "SINGLE_COLUMN"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "GeoPointCreator",
-      "params": {
-        "out_column": "geopoint",
-        "lat_column": "latitude",
-        "lon_column": "longitude"
-      },
-      "alwaysShowComment": false
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "DateParser",
+          "params": {
+            "formats": [
+              "yyyy-MM-dd"
+            ],
+            "columns": [
+              "last_scraped",
+              "last_review",
+              "calendar_last_scraped",
+              "host_since",
+              "first_review"
+            ],
+            "timezone_id": "UTC",
+            "appliesTo": "COLUMNS",
+            "lang": "auto"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ExtractNumbers",
+          "params": {
+            "output": "",
+            "multipleValues": false,
+            "input": "host_acceptance_rate",
+            "replaceMultipliers": false,
+            "delimiter": "BEST_GUESS",
+            "extractToJson": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ExtractNumbers",
+          "params": {
+            "output": "",
+            "multipleValues": false,
+            "input": "host_response_rate",
+            "replaceMultipliers": false,
+            "delimiter": "BEST_GUESS",
+            "extractToJson": false
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "CurrencySplitter",
+          "params": {
+            "inCol": "price",
+            "outColAmount": "price_amount",
+            "outColCurrencyCode": "price_currency_code",
+            "pristineAmount": true
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "NumericalFormatConverter",
+          "params": {
+            "inFormat": "EN",
+            "outCol": "",
+            "columns": [
+              "price_amount"
+            ],
+            "outFormat": "RAW",
+            "appliesTo": "SINGLE_COLUMN"
+          },
+          "alwaysShowComment": false
+        },
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "GeoPointCreator",
+          "params": {
+            "out_column": "geopoint",
+            "lat_column": "latitude",
+            "lon_column": "longitude"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false,
+      "secondaryColor": "#cae8f4"
     }
   ],
   "maxProcessedMemTableBytes": -1,
