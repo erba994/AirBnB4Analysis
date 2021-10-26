@@ -305,6 +305,10 @@
       {
         "d": true,
         "name": "reviews_per_month"
+      },
+      {
+        "d": true,
+        "name": "geopoint"
       }
     ]
   },
@@ -417,6 +421,18 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "GeoPointCreator",
+      "params": {
+        "out_column": "geopoint",
+        "lat_column": "latitude",
+        "lon_column": "longitude"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -507,6 +523,7 @@
     "availability_30": 128,
     "listing_url": 274,
     "maximum_minimum_nights": 180,
+    "geopoint": 300,
     "maximum_nights": 120,
     "number_of_reviews_ltm": 173,
     "host_picture_url": 300,
