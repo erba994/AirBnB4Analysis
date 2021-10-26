@@ -123,8 +123,8 @@
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
-          "transparency": 0.9,
-          "colorPalette": "Greens",
+          "transparency": 0.6,
+          "colorPalette": "ryg1",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -135,8 +135,8 @@
           },
           "paletteType": "CONTINUOUS",
           "quantizationMode": "QUANTILES",
-          "numQuantizeSteps": 5,
-          "paletteMiddleValue": 0.0
+          "numQuantizeSteps": 7,
+          "paletteMiddleValue": 1.0
         },
         "bubblesOptions": {
           "defaultRadius": 5.0,
