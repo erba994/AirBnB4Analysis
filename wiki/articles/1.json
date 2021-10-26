@@ -1,13 +1,25 @@
 {
   "name": "Preparatory data",
   "layout": "FOLDER",
-  "attachments": [],
+  "attachments": [
+    {
+      "attachmentType": "FILE",
+      "smartId": "YJxt05cbw2VJ",
+      "details": {
+        "objectDisplayName": "Mazur-Ekaterina-Airbnb-thesis.pdf",
+        "size": 1666738,
+        "mimeType": "application/pdf"
+      },
+      "attachedBy": "admin",
+      "attachedOn": 1635281816714
+    }
+  ],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635281806083
+    "lastModifiedOn": 1635281816714
   },
   "creationTag": {
     "versionNumber": 0,
