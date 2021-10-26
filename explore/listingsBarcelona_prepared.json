@@ -50,7 +50,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "grouped_columns",
+        "type": "scatter_map",
         "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
@@ -63,19 +63,44 @@
         "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
-        "uaSize": [],
+        "uaSize": [
+          {
+            "column": "number_of_reviews",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "uaShape": [],
-        "uaColor": [],
+        "uaColor": [
+          {
+            "column": "review_scores_rating",
+            "type": "NUMERICAL",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "uaTooltip": [],
         "groupDimension": [],
         "xMeasure": [],
         "yMeasure": [],
         "colorMeasure": [],
         "sizeMeasure": [],
-        "geometry": [],
+        "geometry": [
+          {
+            "column": "geopoint",
+            "type": "GEOPOINT",
+            "treatAsAlphanum": false,
+            "isA": "ua",
+            "adminLevel": 0
+          }
+        ],
         "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -98,8 +123,8 @@
         "animationRepeat": true,
         "colorOptions": {
           "singleColor": "#2678B1",
-          "transparency": 0.75,
-          "colorPalette": "default",
+          "transparency": 0.9,
+          "colorPalette": "Greens",
           "ccScaleMode": "NORMAL",
           "customPalette": {
             "id": "__dku_custom__",
@@ -109,7 +134,7 @@
             "fixedValues": false
           },
           "paletteType": "CONTINUOUS",
-          "quantizationMode": "NONE",
+          "quantizationMode": "QUANTILES",
           "numQuantizeSteps": 5,
           "paletteMiddleValue": 0.0
         },
@@ -117,6 +142,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
