@@ -420,17 +420,32 @@
           "type": "CATEGORICAL"
         },
         "id": "AbZRhHX"
+      },
+      {
+        "type": "pairwise_ttest",
+        "adjustmentMethod": "NONE",
+        "maxGroups": 10,
+        "confidenceLevel": 0.95,
+        "xColumn": {
+          "name": "review_scores_rating",
+          "type": "CONTINUOUS"
+        },
+        "yColumn": {
+          "name": "host_has_profile_pic",
+          "type": "CATEGORICAL"
+        },
+        "id": "OB2fOD2"
       }
     ],
     "id": "FmnA0d3"
   },
   "name": "Worksheet 2",
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 10,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635280397203
+    "lastModifiedOn": 1635280480498
   },
   "creationTag": {
     "versionNumber": 0,
