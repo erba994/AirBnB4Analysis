@@ -435,17 +435,88 @@
           "type": "CATEGORICAL"
         },
         "id": "OB2fOD2"
+      },
+      {
+        "type": "univariate_header",
+        "showHistogram": false,
+        "showQuantile": false,
+        "showFrequencyTable": false,
+        "showSummary": true,
+        "showBoxPlot": false,
+        "xColumns": [
+          {
+            "name": "review_scores_rating",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "review_scores_rating",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "univariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": true,
+                "compute": {
+                  "totalCount": false,
+                  "mean": false,
+                  "sum": false,
+                  "median": false,
+                  "std": false,
+                  "variance": true,
+                  "skewness": false,
+                  "kurtosis": false,
+                  "sem": false,
+                  "completeCount": false,
+                  "nbEmpty": false,
+                  "zeroCount": false,
+                  "zeroRatio": false,
+                  "nonZeroRatio": false,
+                  "iqr": false,
+                  "distinctCount": false,
+                  "nbNonEmpty": false,
+                  "min": false,
+                  "max": false,
+                  "range": false,
+                  "mode": false
+                },
+                "column": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "jG8IHUh"
+              }
+            ],
+            "id": "46pf9oV"
+          }
+        ],
+        "splitBy": {
+          "groupingColumn": {
+            "name": "host_has_profile_pic",
+            "type": "CATEGORICAL"
+          },
+          "binningMode": "AUTO",
+          "maxValues": 5,
+          "groupWithOthers": true,
+          "customBinningBoundaries": [],
+          "groupWithAll": true
+        },
+        "id": "rtz1DoW"
       }
     ],
     "id": "FmnA0d3"
   },
   "name": "Worksheet 2",
   "versionTag": {
-    "versionNumber": 10,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635280480498
+    "lastModifiedOn": 1635280569191
   },
   "creationTag": {
     "versionNumber": 0,
