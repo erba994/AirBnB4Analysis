@@ -28,17 +28,375 @@
   "rootCard": {
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
-    "showConfidenceInterval": false,
-    "cards": [],
+    "showConfidenceInterval": true,
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "review_scores_rating",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": false,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "host_is_superhost",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "host_identity_verified",
+            "type": "CATEGORICAL"
+          },
+          {
+            "name": "host_has_profile_pic",
+            "type": "CATEGORICAL"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "host_is_superhost",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_is_superhost",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "rfztzp6"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_is_superhost",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "G0Nmvdl"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_is_superhost",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "7x4m9qP"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": true,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "host_is_superhost",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "4Khoiso"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_is_superhost",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VmCPlxJ"
+              }
+            ],
+            "id": "S11uy85"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "host_identity_verified",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_identity_verified",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "6Q38Bdh"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_identity_verified",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "KpK3e0e"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_identity_verified",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "Z9zLr8K"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": true,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "host_identity_verified",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ocqBaJ4"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_identity_verified",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "3Wq9bo5"
+              }
+            ],
+            "id": "otHJe6O"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "host_has_profile_pic",
+              "type": "CATEGORICAL"
+            },
+            "cards": [
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_has_profile_pic",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "uqpMYzN"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_has_profile_pic",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "lWrIynG"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_has_profile_pic",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "191eyNJ"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": true,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "host_has_profile_pic",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "GHsDLBa"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "host_has_profile_pic",
+                  "type": "CATEGORICAL"
+                },
+                "yColumn": {
+                  "name": "review_scores_rating",
+                  "type": "CONTINUOUS"
+                },
+                "id": "zt3K65a"
+              }
+            ],
+            "id": "D3RLPFa"
+          }
+        ],
+        "id": "vLvwcsv"
+      }
+    ],
     "id": "FmnA0d3"
   },
   "name": "Worksheet 2",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635279766964
+    "lastModifiedOn": 1635279911848
   },
   "creationTag": {
     "versionNumber": 0,
