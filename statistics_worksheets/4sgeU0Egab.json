@@ -5226,13 +5226,13 @@
     ],
     "id": "xtmqaqg"
   },
-  "name": "Worksheet",
+  "name": "Basic stats",
   "versionTag": {
-    "versionNumber": 23,
+    "versionNumber": 25,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1634651040731
+    "lastModifiedOn": 1635280783838
   },
   "creationTag": {
     "versionNumber": 0,
