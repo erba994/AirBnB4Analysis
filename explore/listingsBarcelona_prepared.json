@@ -50,7 +50,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "scatter_map",
+        "type": "grid_map",
         "variant": "normal",
         "name": "New chart",
         "userEditedName": false,
@@ -63,30 +63,25 @@
         "yDimension": [],
         "uaXDimension": [],
         "uaYDimension": [],
-        "uaSize": [
-          {
-            "column": "number_of_reviews",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0
-          }
-        ],
+        "uaSize": [],
         "uaShape": [],
-        "uaColor": [
-          {
-            "column": "review_scores_rating",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "isA": "ua",
-            "adminLevel": 0
-          }
-        ],
+        "uaColor": [],
         "uaTooltip": [],
         "groupDimension": [],
         "xMeasure": [],
         "yMeasure": [],
-        "colorMeasure": [],
+        "colorMeasure": [
+          {
+            "column": "review_scores_rating",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "sizeMeasure": [],
         "geometry": [
           {
@@ -97,7 +92,18 @@
             "adminLevel": 0
           }
         ],
-        "tooltipMeasures": [],
+        "tooltipMeasures": [
+          {
+            "column": "review_scores_rating",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
         "filters": [],
@@ -139,7 +145,7 @@
           "paletteMiddleValue": 1.0
         },
         "bubblesOptions": {
-          "defaultRadius": 5.0,
+          "defaultRadius": 2.0,
           "singleShape": "FILLED_CIRCLE"
         },
         "computeMode": "NORMAL",
@@ -157,8 +163,8 @@
           "lockSquareGrid": false
         },
         "mapGridOptions": {
-          "gridLonDeg": 0.6,
-          "gridLatDeg": 0.6
+          "gridLonDeg": 0.011,
+          "gridLatDeg": 0.014
         },
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
