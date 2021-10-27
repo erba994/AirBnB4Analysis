@@ -3,7 +3,13 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "minLat": 41.28090255982091,
+      "minLon": 2.050872794352472,
+      "maxLat": 41.466399253078876,
+      "maxLon": 2.252746573649347,
+      "gridSize": 10
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -36,11 +42,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635368728852
+    "lastModifiedOn": 1635368770289
   },
   "creationTag": {
     "versionNumber": 0,
