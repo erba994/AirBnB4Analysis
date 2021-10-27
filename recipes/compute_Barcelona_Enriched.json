@@ -3,7 +3,27 @@
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
   "params": {
-    "customConfig": {},
+    "customConfig": {
+      "type_of_pois": [
+        "shop",
+        "leisure",
+        "tourism",
+        "historic",
+        "amenity",
+        "restaurant",
+        "bar",
+        "stadium",
+        "museum"
+      ],
+      "request_by_batch": false,
+      "pois_enrichment": false,
+      "enrichment_keys": [
+        "brand",
+        "operator",
+        "name"
+      ],
+      "polygon_column": "geopoint"
+    },
     "containerSelection": {
       "containerMode": "INHERIT"
     }
@@ -37,11 +57,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635369093635
+    "lastModifiedOn": 1635369161815
   },
   "creationTag": {
     "versionNumber": 0,
