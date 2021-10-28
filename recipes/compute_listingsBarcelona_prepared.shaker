@@ -96,10 +96,6 @@
       },
       {
         "d": true,
-        "name": "host_verifications"
-      },
-      {
-        "d": true,
         "name": "host_has_profile_pic"
       },
       {
@@ -153,10 +149,6 @@
       {
         "d": true,
         "name": "beds"
-      },
-      {
-        "d": true,
-        "name": "amenities"
       },
       {
         "d": true,
@@ -444,6 +436,30 @@
       ],
       "alwaysShowComment": false,
       "secondaryColor": "#cae8f4"
+    },
+    {
+      "preview": false,
+      "name": "Deleting arrays for test",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "host_verifications",
+              "amenities"
+            ],
+            "keep": false,
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
