@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635278891100
+    "lastModifiedOn": 1635447006466
   },
   "creationTag": {
     "versionNumber": 0,
@@ -181,10 +181,6 @@
         "type": "bigint"
       },
       {
-        "name": "host_verifications",
-        "type": "string"
-      },
-      {
         "name": "host_has_profile_pic",
         "type": "boolean"
       },
@@ -242,13 +238,6 @@
       {
         "name": "beds",
         "type": "bigint"
-      },
-      {
-        "name": "amenities",
-        "type": "array",
-        "arrayContent": {
-          "type": "string"
-        }
       },
       {
         "name": "price",
