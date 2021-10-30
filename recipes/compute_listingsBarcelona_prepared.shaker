@@ -4,310 +4,6 @@
     "list": [
       {
         "d": true,
-        "name": "id"
-      },
-      {
-        "d": true,
-        "name": "listing_url"
-      },
-      {
-        "d": true,
-        "name": "scrape_id"
-      },
-      {
-        "d": true,
-        "name": "last_scraped"
-      },
-      {
-        "d": true,
-        "name": "name"
-      },
-      {
-        "d": true,
-        "name": "description"
-      },
-      {
-        "d": true,
-        "name": "neighborhood_overview"
-      },
-      {
-        "d": true,
-        "name": "picture_url"
-      },
-      {
-        "d": true,
-        "name": "host_id"
-      },
-      {
-        "d": true,
-        "name": "host_url"
-      },
-      {
-        "d": true,
-        "name": "host_name"
-      },
-      {
-        "d": true,
-        "name": "host_since"
-      },
-      {
-        "d": true,
-        "name": "host_location"
-      },
-      {
-        "d": true,
-        "name": "host_about"
-      },
-      {
-        "d": true,
-        "name": "host_response_time"
-      },
-      {
-        "d": true,
-        "name": "host_response_rate"
-      },
-      {
-        "d": true,
-        "name": "host_acceptance_rate"
-      },
-      {
-        "d": true,
-        "name": "host_is_superhost"
-      },
-      {
-        "d": true,
-        "name": "host_thumbnail_url"
-      },
-      {
-        "d": true,
-        "name": "host_picture_url"
-      },
-      {
-        "d": true,
-        "name": "host_neighbourhood"
-      },
-      {
-        "d": true,
-        "name": "host_listings_count"
-      },
-      {
-        "d": true,
-        "name": "host_total_listings_count"
-      },
-      {
-        "d": true,
-        "name": "host_verifications"
-      },
-      {
-        "d": true,
-        "name": "host_has_profile_pic"
-      },
-      {
-        "d": true,
-        "name": "host_identity_verified"
-      },
-      {
-        "d": true,
-        "name": "neighbourhood"
-      },
-      {
-        "d": true,
-        "name": "neighbourhood_cleansed"
-      },
-      {
-        "d": true,
-        "name": "neighbourhood_group_cleansed"
-      },
-      {
-        "d": true,
-        "name": "latitude"
-      },
-      {
-        "d": true,
-        "name": "longitude"
-      },
-      {
-        "d": true,
-        "name": "property_type"
-      },
-      {
-        "d": true,
-        "name": "room_type"
-      },
-      {
-        "d": true,
-        "name": "accommodates"
-      },
-      {
-        "d": true,
-        "name": "bathrooms"
-      },
-      {
-        "d": true,
-        "name": "bathrooms_text"
-      },
-      {
-        "d": true,
-        "name": "bedrooms"
-      },
-      {
-        "d": true,
-        "name": "beds"
-      },
-      {
-        "d": true,
-        "name": "amenities"
-      },
-      {
-        "d": true,
-        "name": "price"
-      },
-      {
-        "d": true,
-        "name": "price_currency_code"
-      },
-      {
-        "d": true,
-        "name": "price_amount"
-      },
-      {
-        "d": true,
-        "name": "minimum_nights"
-      },
-      {
-        "d": true,
-        "name": "maximum_nights"
-      },
-      {
-        "d": true,
-        "name": "minimum_minimum_nights"
-      },
-      {
-        "d": true,
-        "name": "maximum_minimum_nights"
-      },
-      {
-        "d": true,
-        "name": "minimum_maximum_nights"
-      },
-      {
-        "d": true,
-        "name": "maximum_maximum_nights"
-      },
-      {
-        "d": true,
-        "name": "minimum_nights_avg_ntm"
-      },
-      {
-        "d": true,
-        "name": "maximum_nights_avg_ntm"
-      },
-      {
-        "d": true,
-        "name": "calendar_updated"
-      },
-      {
-        "d": true,
-        "name": "has_availability"
-      },
-      {
-        "d": true,
-        "name": "availability_30"
-      },
-      {
-        "d": true,
-        "name": "availability_60"
-      },
-      {
-        "d": true,
-        "name": "availability_90"
-      },
-      {
-        "d": true,
-        "name": "availability_365"
-      },
-      {
-        "d": true,
-        "name": "calendar_last_scraped"
-      },
-      {
-        "d": true,
-        "name": "number_of_reviews"
-      },
-      {
-        "d": true,
-        "name": "number_of_reviews_ltm"
-      },
-      {
-        "d": true,
-        "name": "number_of_reviews_l30d"
-      },
-      {
-        "d": true,
-        "name": "first_review"
-      },
-      {
-        "d": true,
-        "name": "last_review"
-      },
-      {
-        "d": true,
-        "name": "review_scores_rating"
-      },
-      {
-        "d": true,
-        "name": "review_scores_accuracy"
-      },
-      {
-        "d": true,
-        "name": "review_scores_cleanliness"
-      },
-      {
-        "d": true,
-        "name": "review_scores_checkin"
-      },
-      {
-        "d": true,
-        "name": "review_scores_communication"
-      },
-      {
-        "d": true,
-        "name": "review_scores_location"
-      },
-      {
-        "d": true,
-        "name": "review_scores_value"
-      },
-      {
-        "d": true,
-        "name": "license"
-      },
-      {
-        "d": true,
-        "name": "instant_bookable"
-      },
-      {
-        "d": true,
-        "name": "calculated_host_listings_count"
-      },
-      {
-        "d": true,
-        "name": "calculated_host_listings_count_entire_homes"
-      },
-      {
-        "d": true,
-        "name": "calculated_host_listings_count_private_rooms"
-      },
-      {
-        "d": true,
-        "name": "calculated_host_listings_count_shared_rooms"
-      },
-      {
-        "d": true,
-        "name": "reviews_per_month"
-      },
-      {
-        "d": true,
         "name": "geopoint"
       }
     ]
@@ -444,6 +140,104 @@
       ],
       "alwaysShowComment": false,
       "secondaryColor": "#cae8f4"
+    },
+    {
+      "preview": false,
+      "name": "Delete columns",
+      "metaType": "GROUP",
+      "disabled": false,
+      "steps": [
+        {
+          "preview": false,
+          "metaType": "PROCESSOR",
+          "disabled": false,
+          "type": "ColumnsSelector",
+          "params": {
+            "columns": [
+              "id",
+              "listing_url",
+              "scrape_id",
+              "last_scraped",
+              "name",
+              "description",
+              "neighborhood_overview",
+              "picture_url",
+              "host_id",
+              "host_url",
+              "host_name",
+              "host_since",
+              "host_location",
+              "host_about",
+              "host_response_time",
+              "host_response_rate",
+              "host_acceptance_rate",
+              "host_is_superhost",
+              "host_thumbnail_url",
+              "host_picture_url",
+              "host_neighbourhood",
+              "host_listings_count",
+              "host_total_listings_count",
+              "host_verifications",
+              "host_has_profile_pic",
+              "host_identity_verified",
+              "neighbourhood",
+              "neighbourhood_cleansed",
+              "neighbourhood_group_cleansed",
+              "latitude",
+              "longitude",
+              "property_type",
+              "room_type",
+              "accommodates",
+              "bathrooms",
+              "bathrooms_text",
+              "bedrooms",
+              "beds",
+              "amenities",
+              "price",
+              "price_currency_code",
+              "price_amount",
+              "minimum_nights",
+              "maximum_nights",
+              "minimum_minimum_nights",
+              "maximum_minimum_nights",
+              "minimum_maximum_nights",
+              "maximum_maximum_nights",
+              "minimum_nights_avg_ntm",
+              "maximum_nights_avg_ntm",
+              "calendar_updated",
+              "has_availability",
+              "availability_30",
+              "availability_60",
+              "availability_90",
+              "availability_365",
+              "calendar_last_scraped",
+              "number_of_reviews",
+              "number_of_reviews_ltm",
+              "number_of_reviews_l30d",
+              "first_review",
+              "last_review",
+              "review_scores_rating",
+              "review_scores_accuracy",
+              "review_scores_cleanliness",
+              "review_scores_checkin",
+              "review_scores_communication",
+              "review_scores_location",
+              "review_scores_value",
+              "license",
+              "instant_bookable",
+              "calculated_host_listings_count",
+              "calculated_host_listings_count_entire_homes",
+              "calculated_host_listings_count_private_rooms",
+              "calculated_host_listings_count_shared_rooms",
+              "reviews_per_month"
+            ],
+            "keep": false,
+            "appliesTo": "COLUMNS"
+          },
+          "alwaysShowComment": false
+        }
+      ],
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
