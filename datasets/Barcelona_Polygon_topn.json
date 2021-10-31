@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635712616933
+    "lastModifiedOn": 1635712652883
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,16 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "latitude",
+        "type": "double"
+      },
+      {
+        "name": "longitude",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "dkuProperties": [],
