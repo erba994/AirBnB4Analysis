@@ -10,7 +10,7 @@
     "latitude",
     "longitude"
   ],
-  "lastRows": 0,
+  "lastRows": 1,
   "duplicateCount": false,
   "engineParams": {
     "hive": {
@@ -48,7 +48,12 @@
   },
   "rank": false,
   "denseRank": false,
-  "orders": [],
+  "orders": [
+    {
+      "column": "latitude",
+      "desc": false
+    }
+  ],
   "rowNumber": false,
   "outputColumnNameOverrides": {}
 }
