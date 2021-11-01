@@ -2,6 +2,19 @@
   "type": "update",
   "neverRecomputeExistingPartitions": false,
   "optionalDependencies": false,
+  "params": {
+    "uniqueKey": [
+      "Polygon"
+    ],
+    "filter": {
+      "distinct": false,
+      "enabled": false
+    },
+    "deleteMissingRows": false,
+    "addMissingRows": true,
+    "deleteMissingCols": false,
+    "addMissingCols": true
+  },
   "customMeta": {
     "kv": {}
   },
@@ -31,11 +44,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635780277990
+    "lastModifiedOn": 1635780300770
   },
   "creationTag": {
     "versionNumber": 0,
