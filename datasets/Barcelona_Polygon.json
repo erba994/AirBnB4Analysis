@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635780111920
+    "lastModifiedOn": 1635780119586
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,7 +88,8 @@
     "columns": [
       {
         "name": "Polygon",
-        "type": "object"
+        "type": "object",
+        "meaning": "GeometryMeaning"
       }
     ],
     "userModified": true
