@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635369092400
+    "lastModifiedOn": 1635780462728
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,61 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "Polygon",
+        "type": "string"
+      },
+      {
+        "name": "stadium",
+        "type": "string"
+      },
+      {
+        "name": "amenity",
+        "type": "string"
+      },
+      {
+        "name": "historic",
+        "type": "string"
+      },
+      {
+        "name": "leisure",
+        "type": "string"
+      },
+      {
+        "name": "bar",
+        "type": "string"
+      },
+      {
+        "name": "shop",
+        "type": "string"
+      },
+      {
+        "name": "tourism",
+        "type": "string"
+      },
+      {
+        "name": "restaurant",
+        "type": "string"
+      },
+      {
+        "name": "museum",
+        "type": "string"
+      },
+      {
+        "name": "tags",
+        "type": "string"
+      },
+      {
+        "name": "geopoint",
+        "type": "string"
+      },
+      {
+        "name": "failure_response",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
