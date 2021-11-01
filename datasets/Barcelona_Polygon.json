@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635780023244
+    "lastModifiedOn": 1635780111920
   },
   "creationTag": {
     "versionNumber": 0,
@@ -88,10 +88,10 @@
     "columns": [
       {
         "name": "Polygon",
-        "type": "string"
+        "type": "object"
       }
     ],
-    "userModified": false
+    "userModified": true
   },
   "dkuProperties": [],
   "metrics": {
