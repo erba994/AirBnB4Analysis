@@ -26,8 +26,48 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "museum",
+          "restaurant",
+          "bar",
+          "stadium"
+        ],
+        "keep": false,
+        "appliesTo": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "MultiColumnFold",
+      "params": {
+        "columns": [
+          "amenity",
+          "historic",
+          "leisure",
+          "shop",
+          "tourism"
+        ],
+        "foldValueColumn": "category",
+        "foldRemoveFoldedColumns": true,
+        "foldNameColumn": "type"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -35,7 +75,24 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "historic": 100,
+    "shop": 113,
+    "amenity": 120,
+    "restaurant": 100,
+    "failure_response": 135,
+    "tourism": 100,
+    "geopoint": 211,
+    "type": 100,
+    "tags": 300,
+    "bar": 100,
+    "museum": 100,
+    "name": 100,
+    "stadium": 100,
+    "Polygon": 300,
+    "category": 134,
+    "leisure": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
