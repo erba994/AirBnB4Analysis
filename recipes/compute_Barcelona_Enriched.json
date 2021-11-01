@@ -22,7 +22,7 @@
         "operator",
         "name"
       ],
-      "polygon_column": "geopoint"
+      "polygon_column": "geometry"
     },
     "containerSelection": {
       "containerMode": "INHERIT"
@@ -39,7 +39,7 @@
     "polygon_dataset": {
       "items": [
         {
-          "ref": "listingsBarcelona_prepared",
+          "ref": "Barcelona_Polygon",
           "deps": []
         }
       ]
@@ -57,11 +57,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1635447028667
+    "lastModifiedOn": 1635780060672
   },
   "creationTag": {
     "versionNumber": 0,
